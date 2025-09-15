@@ -383,7 +383,7 @@ esp_err_t bsp_display_new(const bsp_display_config_t *config, esp_lcd_panel_hand
         .pclk_hz = BSP_LCD_PIXEL_CLOCK_HZ,
         .lcd_cmd_bits = LCD_CMD_BITS,
         .lcd_param_bits = LCD_PARAM_BITS,
-        .spi_mode = 2,
+        .spi_mode = 0, // Note: SPI Mode 2 causes black screen with no display output
         .trans_queue_depth = 10,
     };
     ESP_GOTO_ON_ERROR(esp_lcd_new_panel_io_spi((esp_lcd_spi_bus_handle_t)BSP_LCD_SPI_NUM, &io_config, ret_io), err, TAG, "New panel IO failed");
