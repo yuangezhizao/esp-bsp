@@ -1,14 +1,14 @@
-# BSP: ESP-SparkBot
+# BSP: ESP-SPARKBOT-45COLL
 
 [![Component Registry](https://components.espressif.com/components/espressif/esp32_s3_eye/badge.svg)](https://components.espressif.com/components/espressif/esp32_s3_eye)
 
 ### Overview
 
-The ESP32-S3-EYE board consists of two parts: the main board (ESP32-S3-EYE-MB) that integrates the ESP32-S3-WROOM-1 module, camera, uSD card slot, digital microphone, USB port, and function buttons; and the sub board (ESP32-S3-EYE-SUB) that contains an LCD display. The main board and sub board are connected through pin headers.
+The ESP-SPARKBOT-45COLL board consists of two parts: the main board (ESP-SPARKBOT-45COLL-MB) that integrates the ESP32-S3-WROOM-1 module, camera, uSD card slot, digital microphone, USB port, and function buttons; and the sub board (ESP-SPARKBOT-45COLL-SUB) that contains an LCD display. The main board and sub board are connected through pin headers.
 
 -   [Hardware Reference](https://www.espressif.com/en/products/devkits/esp-eye/overview.)
 
-![](https://raw.githubusercontent.com/espressif/esp-who/master/docs/_static/get-started/ESP32-S3-EYE_MB-annotated-photo.png)
+![](https://raw.githubusercontent.com/espressif/esp-who/master/docs/_static/get-started/ESP-SPARKBOT-45COLL_MB-annotated-photo.png)
 
 **The development board has the following features:**
 

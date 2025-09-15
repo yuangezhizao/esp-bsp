@@ -1,5 +1,6 @@
-version: "3.1.0~1"
-description: Board Support Package (BSP) for ESP32-SparkBot
+version: "5.0.1"
+description: Board Support Package (BSP) for ESP-SparkBot-45coll
+url: https://github.com/yuangezhizao/esp-bsp/blob/dev/bsp/esp_sparkbot_45coll
 
 targets:
   - esp32s3
@@ -8,20 +9,32 @@ tags:
   - bsp
 
 dependencies:
-  idf: ">=4.4.5"
-
-  espressif/i2c_bus:
-    version: "1.1.*"
-    public: true
+  idf: ">=5.4" # I2C Driver-NG is supported in esp32-camera only from IDFv5.4
 
   espressif/esp_lvgl_port:
-    version: "2.4.1"
+    version: "^2"
+    public: true
+    override_path: "../../components/esp_lvgl_port"
+
+  esp32-camera:
+    version: "^2.0.13"
     public: true
 
   button:
-    version: ">=2.5,<4.0"
+    version: "^4"
     public: true
 
   esp_codec_dev:
-    version: "==1.1.0"
+    version: "~1.3.1"
     public: true
+
+  qma6100p:
+    version: "^2"
+    override_path: "../../components/qma6100p"
+    public: true
+
+examples:
+  - path: ../../examples/display
+  - path: ../../examples/display_camera
+  - path: ../../examples/display_lvgl_demos
+  - path: ../../examples/display_lvgl_benchmark
